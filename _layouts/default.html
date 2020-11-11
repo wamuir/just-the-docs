@@ -66,7 +66,7 @@ layout: table_wrappers
       {% endif %}
     </nav>
     <footer class="site-footer">
-      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+          {%- include site_footer_custom.html -%}
     </footer>
   </div>
   <div class="main" id="top">
@@ -81,9 +81,9 @@ layout: table_wrappers
         </div>
       {% endif %}
       {% include header_custom.html %}
-      {% if site.aux_links %}
         <nav aria-label="Auxiliary" class="aux-nav">
           <ul class="aux-nav-list">
+      {% if site.aux_links %}
             {% for link in site.aux_links %}
               <li class="aux-nav-list-item">
                 <a href="{{ link.last }}" class="site-button"
@@ -91,13 +91,17 @@ layout: table_wrappers
                   target="_blank" rel="noopener noreferrer"
                   {% endif %}
                 >
-                  {{ link.first }}
+                  {{ link.first | markdownify }}
                 </a>
               </li>
             {% endfor %}
+      {% endif %}
+              <li class="aux-nav-list-item">
+		      <a class="site-button" href="https://twitter.com/intent/tweet?text={% if page.share %}{{page.share|url_encode}}{% else %}{{page.title|strip_html|url_encode}}{% endif %}&url={{site.url|append:page.url|url_encode}}&via=LunellaLab"><i class="fa fa-twitter"></i>
+		      </a>
+              </li>
           </ul>
         </nav>
-      {% endif %}
     </div>
     <div id="main-content-wrap" class="main-content-wrap">
       {% unless page.url == "/" %}
