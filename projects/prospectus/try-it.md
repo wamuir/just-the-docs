@@ -12,6 +12,8 @@ share: Prototyping a Supplier Prospectus
 
 ---
 
+**Notice: the prototype is down for an upgrade.  It'll be back online soon!**
+
 Enter a nine-digit DUNS Number in the form below, press `Try It!`, evaluate the
 output and then [send us feedback](mailto:anita.naylor@nps.edu).  This is a
 prototype. It is meant for testing (please test).
@@ -22,7 +24,7 @@ method="post" class="boilerform" target="_blank"> <div class="c-form__row">
 Number</label> <input class="c-input-field text-purple-200" type="text"
 id="duns" name="duns" pattern="[0-9]{9}" value="120406462" title="Must contain
 exactly nine digits" required> <button type="submit" class="btn btn-primary
-fs-5" style="height:46px;vertical-align:middle;line-height:1.1">Try
+fs-5" style="height:46px;vertical-align:middle;line-height:1.1" disabled>Try
 It!</button><br/> <span class="text-grey-dk-000"><i class="fa
 fa-info-circle"></i> You can change the DUNS number above</span> </div> </form>
 </div>

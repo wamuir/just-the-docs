@@ -11,8 +11,9 @@ share: Prototyping a Supplier Prospectus
 {: .no_toc }
 
 
-We've made the application operational in a live environment and it is
-[available for testing](../try-it/).
+We've made the application operational in a live environment and, while it has
+been [available for testing](../try-it/) in the past, the application is presently
+down to implement an upgrade. It'll be back up shortly.
 {: .fs-5 .fw-300 }
 
 ---
