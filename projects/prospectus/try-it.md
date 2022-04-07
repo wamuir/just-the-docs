@@ -3,7 +3,7 @@ layout: default
 title: '<img src="/assets/images/loader.svg"> Try the Prototype'
 parent: Supplier Prospectus
 nav_order: 4
-last_modified_date:  2020-11-08 15:26:12 UTC
+last_modified_date:  2022-04-06 21:32:35 UTC
 share: Prototyping a Supplier Prospectus
 ---
 
@@ -12,20 +12,21 @@ share: Prototyping a Supplier Prospectus
 
 ---
 
-Enter a nine-digit DUNS Number in the form below, press `Try It!`, evaluate the
-output and then [send us feedback](mailto:anita.naylor@nps.edu).  This is a
-prototype. It is meant for testing (please test).
+Enter a twelve-character System for Award Management Unique Entity Identifier
+(SAM UEI) in the form below, press `Try It!`, evaluate the output and then
+[send us feedback](mailto:anita.naylor@nps.edu).  This is a prototype. It is
+meant for testing (please test).
 
 <div style="padding:20px;"> <form action="https://prospector.lunella.io/jobs/"
 method="post" class="boilerform" target="_blank"> <div class="c-form__row">
-<label class="c-label" for="duns" style="font-weight:normal;">Enter a DUNS
-Number</label> <input class="c-input-field text-purple-200" type="text"
-id="duns" name="duns" pattern="[0-9]{9}" value="120406462" title="Must contain
-exactly nine digits" required> <button type="submit" class="btn btn-primary
-fs-5" style="height:46px;vertical-align:middle;line-height:1.1">Try
-It!</button><br/> <span class="text-grey-dk-000"><i class="fa
-fa-info-circle"></i> You can change the DUNS number above</span> </div> </form>
-</div>
+<label class="c-label" for="uei" style="font-weight:normal;">Enter a SAM
+UEI</label> <input class="c-input-field text-purple-200" type="text" id="uei"
+name="uei" pattern="[0-9A-Za-z]{12}" value="C6M7C2FLKER5" title="Must contain
+exactly twelve alphanumeric characters" required> <button type="submit"
+class="btn btn-primary fs-5"
+style="height:46px;vertical-align:middle;line-height:1.1">Try It!</button><br/>
+<span class="text-grey-dk-000"><i class="fa fa-info-circle"></i> You can change
+the SAM UEI above</span> </div> </form> </div>
 
 ---
 
